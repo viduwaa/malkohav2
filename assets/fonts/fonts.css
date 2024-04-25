@@ -1,0 +1,33 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'ProductSans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('ProductSansRegular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('ProductSansRegular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+@font-face {
+    font-display: swap; 
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 300;
+    src: url('Extatica-Regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('Extatica-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+@font-face {
+    font-display: swap; 
+    font-family: 'Extatica';
+    font-style: normal;
+    font-weight: 700;
+    src: url('Extatica-Bold.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('Extatica-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+@font-face {
+    font-display: swap; 
+    font-family: 'Extatica';
+    font-style: italic;
+    font-weight: 300;
+    src: url('Extatica-Italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('Extatica-Italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+

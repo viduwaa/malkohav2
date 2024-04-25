@@ -1,0 +1,273 @@
+@import url("../assets/fonts/fonts.css");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Extatica", sans-serif;
+    transition: all 0.3s;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: none;
+}
+
+.login-btn {
+    display: block;
+    position: relative;
+    font-family: "ProductSans", sans-serif;
+    padding: 10px;
+    border: none;
+    width: 220px;
+    color: blue;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px 4px rgba(0, 0, 0, 0.75);
+}
+
+.login-btn::after {
+    content: url("../assets/icons/google.png");
+    position: absolute;
+    top: -2px;
+    padding: 10px;
+}
+
+.login-btn:hover {
+    box-shadow: -1px 9px 10px -5px rgba(27, 26, 26, 0.88);
+    -webkit-box-shadow: -1px 9px 10px -5px rgba(27, 26, 26, 0.88);
+    -moz-box-shadow: -1px 9px 10px -5px rgba(27, 26, 26, 0.88);
+}
+
+/* page layout */
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid:
+        "sidebar body" 1fr
+        / auto 1fr;
+    gap: 8px;
+    margin-top: 3rem;
+}
+
+.sidebar {
+    position: inherit;
+    grid-area: sidebar;
+    width: 20vw;
+    height: 100dvh;
+    background: #ebe8e8;
+    z-index: 5;
+}
+.body {
+    grid-area: body;
+    overflow-y: scroll;
+    width: 79vw;
+    height: 100dvh;
+    padding-bottom: 20vh;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    height: 3rem;
+    width: 100dvw;
+    background-color: #d6c9c9;
+    top: 0;
+    z-index: 1;
+}
+
+header ul {
+    display: flex;
+    height: 3rem;
+    justify-content: right;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+
+header ul li {
+    padding: 0.3rem;
+    background: #cf9494;
+    border-radius: 0.3rem;
+    width: 6rem;
+    text-align: center;
+}
+
+header ul li:hover {
+    background: #dad0d0;
+    color: white;
+}
+
+header a {
+    color: white;
+    width: 6rem;
+}
+
+.bars {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.menu[type="checkbox"] {
+    display: none;
+}
+
+/* sidebar */
+
+.img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sidebar ul {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar ul li {
+    padding: 0.3rem;
+    background: #cf9494;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    top: 25px;
+    margin: auto;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.content{
+    padding: 1rem;
+    background: #d6c9c9;
+    border-radius: 0.3rem;
+}
+
+.recordings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: #cf9494;
+    border-radius: 0.3rem;
+    
+}
+
+.card li{
+    background: #b4b1b1;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.semester{
+    max-height: 0px;
+    transition: max-height 0.3s;
+    overflow: hidden;
+}
+
+input[type="checkbox"]{
+        display: none;
+    }
+
+#semI:checked ~ .semester{
+    max-height: 100vh;
+}
+
+
+
+#semII:checked ~ .semester{
+    max-height: 100dvh;
+}
+
+#semII:checked ~ .content h2::after{
+    content:url("../assets/icons/dropup.svg") ;
+}
+
+.content h2::after{
+    content: url("../assets/icons/dropdown.svg");
+    margin-left: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .layout {
+        display: flex;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .bars {
+        display: inline;
+    }
+
+    .sidebar {
+        display: block;
+        width: 100%;
+        max-width: 0;
+        min-width: 0;
+        overflow: hidden;
+        transition: min-width 0.5s;
+    }
+
+    .body {
+        width: 100vw;
+    }
+
+    .active {
+        min-width: 80vw;
+    }
+
+    .img-wrapper {
+        display: none;
+    }
+}
