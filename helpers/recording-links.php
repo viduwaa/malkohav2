@@ -1,13 +1,17 @@
 <?php
-$recordingsSemI = [
+require_once('course-codes.php');
+
+$recordingsSemII = [
     [
         'name' => 'Mathematics for Technology I',
+        'code' => $mathematics,
         'topics' => [
             'Lesson I' => '',
         ]
     ],
     [
         'name' => 'Communication Skills II',
+        'code' => $english,
         'topics' => [
             'Mr. Shantha Kumara' => 'https://youtu.be/6Gy9VWU0UHg',
             'Mrs. Tharindra Abenayake' => '',
@@ -15,12 +19,14 @@ $recordingsSemI = [
     ],
     [
         'name' => 'Computer Programming for Technology',
+        'code' => $programming,
         'topics' => [
             'Lesson I' => '',
         ]
     ],
     [
         'name' => 'Electricity and Magnetism',
+        'code' => $electricityMagnetism,
         'topics' => [
             'Lesson I' => ''
         ]
@@ -28,9 +34,10 @@ $recordingsSemI = [
 
 ];
 
-$recordingsSemII = [
+$recordingsSemI = [
     [
         'name' => 'Mathematics for Technology I',
+        'code' => $mathematicsSemI,
         'topics' => [
             'Intensive' => 'https://youtube.com/playlist?list=PLed4Ta-AnBbNwb8a4mYAnQMlww_98lQvY&si=wzTO4b-X8biMxlRc',
             'Linear Algebra' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbMQZx5RmGb2bibz63x11-xM',
@@ -42,6 +49,7 @@ $recordingsSemII = [
     ],
     [
         'name' => 'Communication Skills I',
+        'code' => $englishSemI,
         'topics' => [
             'Mr. Shantha Kumara' => 'https://youtu.be/6Gy9VWU0UHg',
             'Mrs. Tharindra Abenayake' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbMK-bLmBpwAOunYIUwK-9TM',
@@ -51,6 +59,7 @@ $recordingsSemII = [
     ],
     [
         'name' => 'Physics for Technology ',
+        'code' => $physics,
         'topics' => [
             'Introduction' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbNK8GKW_8U-wY8K1OWfKOnv',
             'Dimensions and Units' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbO45oS4dyY-7-PrdDyGt6k3',
@@ -59,12 +68,14 @@ $recordingsSemII = [
     ],
     [
         'name' => 'Electronics',
+        'code' => $electronics,
         'topics' => [
             'Lessons' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbOHBPJ72UpfnRmM_mCWUnwH'
         ]
     ],
     [
         'name' => 'Computer Programming',
+        'code' => $programming,
         'topics' => [
             'Introduction' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbP1E2cnVeXjiHzBxbpKgO5X',
             'Algorithm' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbOnmnfW9p1rtPobRF0QKE5A',
@@ -75,6 +86,7 @@ $recordingsSemII = [
     ],
     [
         'name' => 'Productivity Tools',
+        'code' => $productivity,
         'topics' => [
             'Practical' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbNW7i8xguTH0e5rDNmbLDXS',
             'Theory' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbPte7uqoXjkvfVzAQjlyKdA',   

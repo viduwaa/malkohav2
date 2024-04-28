@@ -5,7 +5,7 @@ include('../helpers/recording-links.php');
 function renderSubject($recordingsSemI)
 {
     $html = "<div class=\"card\">";
-    $html .= "<h3>{$recordingsSemI['name']}</h3>";
+    $html .= "<h3>{$recordingsSemI['name']}</h3> <p style=\"margin-top:-10px\"> {$recordingsSemI['code']} </p>";
     $html .= "<ul>";
     foreach ($recordingsSemI['topics'] as $topic => $link) {
         if (empty($link)) {
@@ -28,7 +28,7 @@ function renderSubject($recordingsSemI)
     <input type="checkbox" name="checkbox" id="semII" class="semester" checked>
     <div class="recordings semester">
         <?php
-        foreach ($recordingsSemI as $subject) {
+        foreach ($recordingsSemII as $subject) {
             echo renderSubject($subject);
         }
         ?>
@@ -42,7 +42,7 @@ function renderSubject($recordingsSemI)
     <input type="checkbox" name="checkbox" id="semI" class="semester">
     <div class="recordings semester">
         <?php
-        foreach ($recordingsSemII as $subject) {
+        foreach ($recordingsSemI as $subject) {
             echo renderSubject($subject);
         }
         ?>

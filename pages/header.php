@@ -16,7 +16,7 @@
             <ul>
                 <input type="checkbox" id="checkbox" class="menu" checked>
                 <label for="checkbox" class="bars">
-                    <img src="../assets/icons/burger-bar.png" alt="menu">
+                    <img id="burger-menu" src="../assets/icons/menu.svg" alt="menu">
                 </label>
 
                 <a href="#">
@@ -66,9 +66,11 @@
         <script>
             const checkbox = document.getElementById('checkbox');
             const sidebar = document.getElementById('sidebar');
+            const burgerMenu = document.getElementById('burger-menu');
 
             checkbox.addEventListener('change', () => {
                 sidebar.classList.toggle('active');
+                burgerMenu.src = sidebar.classList.contains('active') ? '../assets/icons/close.svg' : '../assets/icons/menu.svg';
             });
         </script>
         <div class="body">
