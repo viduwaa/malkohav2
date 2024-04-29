@@ -1,3 +1,7 @@
+<?php
+include('check_login.php'); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +9,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <script src="https://kit.fontawesome.com/d47dffcf4c.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -19,7 +22,7 @@
                     <img id="burger-menu" src="../assets/icons/menu.svg" alt="menu">
                 </label>
 
-                <a href="#">
+                <a href="logout.php">
                     <li>Log out</li>
                 </a>
                 <a href="#">
@@ -48,7 +51,7 @@
                     </a>
                 </ul>
             </nav>
-            <div>
+            <div class="aboutus">
                 <ul>
                     <a href="/malkohav2/pages/aboutus.php">
                         <li>About Us</li>
@@ -59,6 +62,7 @@
                     <div>
                         <!-- <a href="#"><img src="../assets/icons/facebook.png" alt="facebook"></a> -->
                         <a href="https://www.youtube.com/@MalKohaFriendsPVTLTD" target="_blank"><img src="../assets/icons/youtube.png" alt="youtube"></a>
+                        <a href="https://www.youtube.com/@MalKohaFriendsPVTLTD" target="_blank"></a>
                     </div>
                 </div>
             </div>

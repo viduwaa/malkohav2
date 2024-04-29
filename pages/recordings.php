@@ -23,7 +23,7 @@ function renderSubject($recordingsSemI)
 ?>
 <div class="content" style="margin:1rem">
     <label for="semII">
-        <h2 style="padding-bottom: 1rem;">Semester II</h2>
+        <h2 style="padding-bottom: 1rem;">Recordings - Semester II</h2>
     </label>
     <input type="checkbox" name="checkbox" id="semII" class="semester" checked>
     <div class="recordings semester">
@@ -37,7 +37,7 @@ function renderSubject($recordingsSemI)
 
 <div class="content" style="margin:3rem 1rem 1rem;">
     <label for="semI">
-        <h2 style="padding-bottom: 1rem;">Semester I</h2>
+        <h2 style="padding-bottom: 1rem;">Recordings - Semester I</h2>
     </label>
     <input type="checkbox" name="checkbox" id="semI" class="semester">
     <div class="recordings semester">
