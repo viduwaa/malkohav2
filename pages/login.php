@@ -1,5 +1,5 @@
 <?php
-
+/* 
 session_start();
 include('config.php');
 require_once(dirname(__DIR__) . '../vendor/autoload.php');
@@ -8,7 +8,7 @@ $client = new Google\Client();
 $client->setAuthConfig(dirname(__DIR__) . '/pages/client_secrets.json');
 $client->addScope('profile');
 $client->addScope('email');
-$client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohav2/pages/login.php');
+//$client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohav2/pages/login.php');
 
 
 if (!isset($_GET['code'])) {
@@ -42,8 +42,9 @@ if (!isset($_GET['code'])) {
 	session_regenerate_id();
 	$_SESSION['google_id'] = $id;
 	$_SESSION['google_loggedin'] = TRUE;
-	header("Location: http://" . $_SERVER['HTTP_HOST'] . "/malkohav2");
+	//header("Location: http://" . $_SERVER['HTTP_HOST'] . "/malkohav2");
 
 	$stmt->close();
 	$conn->close();
 }
+ */
