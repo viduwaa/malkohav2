@@ -28,9 +28,13 @@ require_once('./vendor/autoload.php');
                 <?php
 
 
+                //$clientId = getenv('GOOGLE_CLIENT_ID');
+                //$clientSecret = getenv('GOOGLE_CLIENT_SECRET');
 
                 $client = new Google\Client();
                 $client->setAuthConfig('./pages/client_secrets.json');
+                //$client->setClientId($clientId);
+                //$client->setClientSecret($clientSecret);
                 $client->addScope('profile');
                 $client->addScope('email');
                 $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohav2/login.php');
