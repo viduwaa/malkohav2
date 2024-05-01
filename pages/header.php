@@ -9,7 +9,8 @@ include('check_login.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <title>Document</title>
+    <link rel="icon" type="image/webp" href="/assets/icons/logo.webp">
+    <title>Malkoha & Friends</title>
 </head>
 
 <body>
