@@ -1,5 +1,5 @@
 <?php
-include('check_login.php'); 
+include('check_login.php');
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +23,11 @@ include('check_login.php');
                 </label>
 
                 <a href="logout.php">
-                    <li>Log out</li>
+                    <li>Log out <img src="../assets/icons/logout.svg" alt="logout"></li>
                 </a>
-                <a href="#">
-                    <li>Profile</li>
-                </a>
+                <div id="profile">
+                    <li >Profile <img src="../assets/icons/account.svg" alt="profile"></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -38,21 +38,30 @@ include('check_login.php');
             <nav>
                 <ul>
                     <a href="/malkohav2/pages/home.php">
-                        <li>Home</li>
+                        <li>Home <img src="../assets/icons/home.svg" alt="home"></li>
                     </a>
                     <a href="/malkohav2/pages/recordings.php">
-                        <li>Recordings</li>
+                        <li>Recordings<img src="../assets/icons/recording.svg" alt="recordings"></li>
                     </a>
                     <a href="/malkohav2/pages/past-papers.php">
-                        <li>Past Papers</li>
+                        <li>Past Papers<img src="../assets/icons/papers.svg" alt="papers"></li>
+                    </a>
+                    <a href="/malkohav2/pages/slide-materials.php">
+                        <li>Slide Materials<img src="../assets/icons/slides.svg" alt="discussions"></li>
                     </a>
                     <a href="/malkohav2/pages/discussions.php">
-                        <li>Tutorials/Assignments Discussions</li>
+                        <li>Discussions<img src="../assets/icons/discuss.svg" alt="discussions"></li>
                     </a>
                 </ul>
             </nav>
             <div class="aboutus">
                 <ul>
+                    <a href="/malkohav2/pages/kuppi-videos.php">
+                        <li>Kuppi Videos</li>
+                    </a>
+                    <a href="/malkohav2/pages/extras.php">
+                        <li>Extras</li>
+                    </a>
                     <a href="/malkohav2/pages/aboutus.php">
                         <li>About Us</li>
                     </a>
@@ -76,5 +85,12 @@ include('check_login.php');
                 sidebar.classList.toggle('active');
                 burgerMenu.src = sidebar.classList.contains('active') ? '../assets/icons/close.svg' : '../assets/icons/menu.svg';
             });
+
+            
         </script>
         <div class="body">
+            <div class="popup">
+                <?php
+                include('account.php');
+                ?>
+            </div>

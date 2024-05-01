@@ -6,7 +6,7 @@ $recordingsSemII = [
         'name' => 'Mathematics for Technology I',
         'code' => $mathematics,
         'topics' => [
-            'Lesson I' => '',
+            'Lesson I - Limits' => '',
         ]
     ],
     [
@@ -14,14 +14,14 @@ $recordingsSemII = [
         'code' => $english,
         'topics' => [
             'Mr. Shantha Kumara' => 'https://youtu.be/6Gy9VWU0UHg',
-            'Mrs. Tharindra Abenayake' => '',
+            'Mrs. Tharindra Abenayake' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbNE5qr7Gdd9nPEQ2V7uAeQh',
         ]
     ],
     [
-        'name' => 'Computer Programming for Technology',
-        'code' => $programming,
+        'name' => 'Web Technologies',
+        'code' => $webTechnologies,
         'topics' => [
-            'Lesson I' => '',
+            'Lesson I' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbOvrJim9KyadA1jr3042w7H',
         ]
     ],
     [
@@ -29,6 +29,20 @@ $recordingsSemII = [
         'code' => $electricityMagnetism,
         'topics' => [
             'Lesson I' => ''
+        ]
+    ],
+    [
+        'name' => 'Introduction to Multimedia',
+        'code' => $multimedia,
+        'topics' => [
+            'Lesson I' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbPIo3uCpmXnreq_0CJUy323'
+        ]
+    ],
+    [
+        'name' => 'Human Computer Interaction',
+        'code' => $humanComputer,
+        'topics' => [
+            'Lesson I' => 'https://www.youtube.com/playlist?list=PLed4Ta-AnBbNidqTWen9ZWPyd2aIfTBr4'
         ]
     ],
 

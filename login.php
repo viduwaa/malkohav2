@@ -37,6 +37,7 @@ require_once('./vendor/autoload.php');
                 //$client->setClientSecret($clientSecret);
                 $client->addScope('profile');
                 $client->addScope('email');
+               
                 $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohav2/login.php');
 
 
@@ -51,6 +52,7 @@ require_once('./vendor/autoload.php');
                     $google_info = $gauth->userinfo->get();
                     $email = $google_info->email;
                     $name = $google_info->name;
+                    $profile_pic = $google_info->picture;
 
                     $stmt = $conn->prepare("SELECT * FROM accounts WHERE email = ?");
                     $stmt->bind_param("s", $email);
@@ -62,8 +64,8 @@ require_once('./vendor/autoload.php');
                     if ($account) {
                         $id = $account['id'];
                     } else {
-                        $stmt = $conn->prepare("INSERT INTO accounts (email, name) VALUES (?, ?)");
-                        $stmt->bind_param("ss", $email, $name);
+                        $stmt = $conn->prepare("INSERT INTO accounts (email, name,picture) VALUES (?, ?, ?)");
+                        $stmt->bind_param("sss", $email, $name,$profile_pic);
                         $stmt->execute();
                         $id = $conn->insert_id;
                     }
