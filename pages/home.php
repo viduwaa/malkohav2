@@ -12,7 +12,7 @@ include('header.php');
     <h2>Quick Links</h2>
     <div class="quicklinks">
         <div class="logged-home">
-            <div class="card">
+            <div class="card sep-hover">
                 <a href="recordings.php">
                     <h3>Time Table</h3>
                     <p>Upto date with Zoom Links</p>
@@ -20,7 +20,7 @@ include('header.php');
             </div>
         </div>
         <div class="logged-home">
-            <div class="card">
+            <div class="card sep-hover">
                 <a href="recordings.php">
                     <h3>Recordings</h3>
                     <p>Online Lecture Recordings</p>
@@ -28,7 +28,7 @@ include('header.php');
             </div>
         </div>
         <div class="logged-home">
-            <div class="card">
+            <div class="card sep-hover">
                 <a href="past-papers.php">
                     <h3>Past Papers</h3>
                     <p>Previous Years Past Papers</p>
@@ -43,7 +43,7 @@ include('header.php');
 
 
 <div class="content" style="margin:1rem">
-    <div class="card">
+    <div class="card timer">
         <?php
         $exam_date_time = strtotime("2024-10-05 09:00:00");
         ?>

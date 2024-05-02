@@ -1,11 +1,11 @@
 @import url("../assets/fonts/fonts.css");
 
 :root {
-    --primary: #fff;
-    --secondary: #6b6bf4;
-    --tertiary: #edde70;
-    --quaternary: #75d6fb;
-    --fivetanary: #4140f9;
+    --primary: #fbe9d0;
+    --secondary: #874f41;
+    --tertiary: #244855;
+    --quaternary: #90aead;
+    --fivetanary: #e64833;
     --font-black: #000;
 }
 
@@ -18,10 +18,6 @@
     font-family: "Extatica", sans-serif;
     transition: all 0.3s;
     color: #000;
-}
-
-svg {
-    color: #43abfa;
 }
 
 body {
@@ -50,7 +46,7 @@ a:visited {
     margin-top: 5vh;
     position: relative;
     padding: 5rem;
-    background: var(--fivetanary);
+    background: var(--tertiary);
     border-radius: 1rem;
 }
 
@@ -72,8 +68,8 @@ a:visited {
     box-shadow: 1px 1px 5px 4px rgba(188, 186, 186, 0.75);
 }
 
-.wrapper div:nth-child(2) a{
-    background: var(--tertiary);
+.wrapper div:nth-child(2) a {
+    background: var(--primary);
 }
 
 .wrapper p {
@@ -121,25 +117,44 @@ a:visited {
         "sidebar body" 1fr
         / auto 1fr;
     gap: 8px;
-    margin-top: 3rem;
     background: var(--primary);
 }
 
 .sidebar {
     position: relative;
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 20vw;
     height: 100dvh;
     background: var(--tertiary);
     z-index: 5;
 }
 .body {
+    padding-top: 3rem;
     grid-area: body;
     overflow-y: scroll;
     width: 79vw;
     height: 100dvh;
     padding-bottom: 20vh;
     position: relative;
+}
+
+.body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.body::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--primary);
+}
+
+.body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: var(--tertiary);
 }
 
 li {
@@ -150,7 +165,8 @@ header {
     position: fixed;
     height: 3rem;
     width: 100dvw;
-    background-color: var(--secondary);
+    background: hsla(196, 40%, 24%, 0.89);
+    backdrop-filter: blur(10px);
     top: 0;
     z-index: 1;
 }
@@ -169,7 +185,8 @@ header ul li {
     display: flex;
     align-items: center;
     padding: 0.3rem;
-    background: var(--tertiary);
+    background: var(--fivetanary);
+    color: var(--primary);
     border-radius: 0.3rem;
     text-align: center;
     cursor: pointer;
@@ -189,16 +206,17 @@ header a {
 }
 
 .bars {
+    position: fixed;
     display: none;
     background: none;
     border: none;
     cursor: pointer;
-    margin-right: auto;
-    padding-left: 10px;
+    padding: 5px 0 0 15px;
+    z-index: 1000;
 }
 
 .bars img {
-    width: 35px;
+    width: 40px;
 }
 
 .menu[type="checkbox"] {
@@ -211,9 +229,13 @@ header a {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 3rem;
+}
+
+.sidebar nav {
+    padding-bottom: 5rem;
 }
 .sidebar nav ul {
-    margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -228,28 +250,31 @@ header a {
     background: var(--quaternary);
     border-radius: 0.3rem;
     text-align: center;
-    height: 2rem;
+
     font-size: 1.2rem;
     font-weight: 700;
 }
 
 .sidebar ul li:hover {
     scale: 1.05;
-    background: var(--secondary);
+    background: var(--fivetanary);
     color: white;
 }
 
+.sidebar ul li img{
+    padding-left: 20%;
+}
+
+.sidebar ul li img:hover {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(57deg)
+        brightness(105%) contrast(102%);
+}
+
 .logo {
-    position: absolute;
     height: 150px;
-    width: 150px;
-    text-align: center;
-    top: -25px;
-    margin: auto;
 }
 
 .aboutus {
-    position: absolute;
     width: 100%;
     bottom: 80px;
     padding: 1rem;
@@ -267,12 +292,13 @@ header a {
 }
 
 .popup {
-    border: 1px solid black;
+    z-index: 100;
+    border: 1px solid var(--primary);
     display: none;
     position: absolute;
     right: 0;
     margin: 1rem;
-    background: rgb(249, 248, 248);
+    background: var(--tertiary);
     border-radius: 0.3rem;
     justify-content: center;
     align-items: center;
@@ -284,14 +310,21 @@ header a {
 
 .popup-content {
     margin: 3rem 0 3rem;
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2rem;
     display: flex;
     gap: 1rem;
     align-items: top;
     justify-content: space-between;
+    background: var(--fivetanary);
+}
+
+.popup-content h2,
+.popup-content h3 {
+    color: var(--primary);
 }
 
 .popup-content div p {
+    color: #fff;
     padding-top: 1.5rem;
 }
 
@@ -308,6 +341,10 @@ header a {
     background: #cf9494;
     border-radius: 0.2rem;
     cursor: pointer;
+}
+
+#popup-close:hover {
+    background: red;
 }
 
 .content {
@@ -329,6 +366,10 @@ header a {
 
 .timer h3 {
     font-size: 1.5rem;
+}
+
+.timer:hover {
+    scale: 1 !important;
 }
 
 .countdown {
@@ -381,10 +422,10 @@ header a {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 8px 9px rgba(65,64,249,0.63);
+    /* box-shadow: 0px 0px 8px 9px rgba(65,64,249,0.63);
 -webkit-box-shadow: 0px 0px 8px 9px rgba(65,64,249,0.63);
--moz-box-shadow: 0px 0px 8px 9px rgba(65,64,249,0.63);
-scale: 1.01;
+-moz-box-shadow: 0px 0px 8px 9px rgba(65,64,249,0.63); */
+    scale: 1.02;
 }
 
 .card li {
@@ -392,11 +433,25 @@ scale: 1.01;
     align-items: center;
     justify-content: space-between;
     background: var(--secondary);
-    color: #fff /* var(--font-black) */;
+    /* var(--font-black) */
     font-size: 1.2rem;
     padding: 0.5rem;
     border-radius: 0.3rem;
     margin-bottom: 0.5rem;
+}
+
+.ext-link {
+    color: var(--primary);
+}
+
+.ext-link:hover,
+.sep-hover:hover {
+    background: #e64833 !important;
+    color: var(--primary) !important;
+}
+
+.sep-hover:hover h3 {
+    color: #fff;
 }
 
 .semester {
@@ -417,11 +472,22 @@ input[type="checkbox"] {
     max-height: 300dvh;
 }
 
+.content label {
+    cursor: pointer;
+}
+
+.content h2,
+.socials h3 {
+    position: relative;
+    color: #fff;
+}
+
 .content h2::after {
     content: url("../assets/icons/dropdown.svg");
     margin-left: 1rem;
-    display: flex;
-    justify-content: end;
+    position: absolute;
+    top: 5px;
+    right: 1rem;
 }
 
 .papers .card h3 {
@@ -442,7 +508,16 @@ input[type="checkbox"] {
     content: "";
 }
 
+@media screen and (max-height: 640px) {
+    .img-wrapper {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .sidebar nav {
+        margin-top: 5rem;
+    }
     .recordings,
     .papers {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));

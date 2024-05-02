@@ -4,12 +4,12 @@ include('../helpers/discussions-links.php');
 
 function renderSubject($discussionsSemI)
 {
-    $html = "<div class=\"card \">";
+    $html = "<div class=\"card\">";
     $html .= "<h3>{$discussionsSemI['name']}</h3> <p style=\"margin-top:-10px\"> {$discussionsSemI['code']} </p>";
     $html .= "<ul>";
-    $html .= "<a href=\"{$discussionsSemI['link']}\" target=\"_blank\"><li class=\"ext-link \">{$discussionsSemI['topic']}</li></a>"; 
+    $html .= "<a href=\"{$discussionsSemI['link']}\" target=\"_blank\"><li>{$discussionsSemI['topic']}</li></a>"; 
     if(isset($discussionsSemI['materiallink'])){
-        $html .= "<a href=\"{$discussionsSemI['materiallink']}\" target=\"_blank\"><li class=\"ext-link \">Materials</li></a>";
+        $html .= "<a href=\"{$discussionsSemI['materiallink']}\" target=\"_blank\"><li>Materials</li></a>";
     }
     $html .= "</ul>";
     $html .= "</div>";

@@ -4,7 +4,7 @@ include('../helpers/paper-links.php');
 
 function renderPaper($papersSemI)
 {
-    $html = "<div class=\"card\">";
+    $html = "<div class=\"card sep-hover\">";
     $html .= "<a href=\"{$papersSemI['link']}\" target=\"_blank\"><h3>{$papersSemI['name']}</h3> <p> {$papersSemI['code']} </p></a>";
     $html .= "</div>";
     return $html;

@@ -10,9 +10,9 @@ function renderSubject($recordingsSemI)
     foreach ($recordingsSemI['topics'] as $topic => $link) {
         if (empty($link)) {
             $link = "#";
-            $html .= "<a href=\"{$link}\" ><li>{$topic}</li></a>";
+            $html .= "<a href=\"{$link}\" ><li class=\"ext-link\">{$topic}</li></a>";
         } else {
-            $html .= "<a href=\"{$link}\" target=\"_blank\"><li>{$topic}</li></a>";
+            $html .= "<a href=\"{$link}\" target=\"_blank\"><li class=\"ext-link\">{$topic}</li></a>";
         }
     }
     $html .= "</ul>";
