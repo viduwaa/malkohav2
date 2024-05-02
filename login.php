@@ -66,6 +66,10 @@ require_once('./vendor/autoload.php');
 
                     if ($account) {
                         $id = $account['id'];
+                        $stmt = $conn->prepare("UPDATE accounts SET last_login = ? WHERE email = ?");
+                        $stmt->bind_param("ss",date("Y-m-d"),$email );
+                        $stmt->execute();
+                        $stmt->close();
                     } else {
                         $stmt = $conn->prepare("INSERT INTO accounts (email, name,picture) VALUES (?, ?, ?)");
                         $stmt->bind_param("sss", $email, $name,$profile_pic);
