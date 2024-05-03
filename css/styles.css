@@ -61,7 +61,19 @@ a:visited {
     width: 200px;
 }
 
+.use-email{
+    font-weight: 300;
+}
+.use-email span{
+    font-weight: 700;
+    color: #e64833;
+}
+
 .wrapper div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #ffffff;
     border-radius: 1rem;
     padding: 2rem;

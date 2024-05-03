@@ -1,8 +1,11 @@
+<!-- This login method not used because it use too many resources for free hosting -->
+<!-- This login method not used because it use too many resources for free hosting -->
+
 <?php
 
 session_start();
 include('./pages/config.php');
-require_once('./vendor/autoload.php');
+//require_once('./vendor/autoload.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,8 +29,11 @@ require_once('./vendor/autoload.php');
             <div>
                 <div style="text-align: center;margin-bottom: 1rem;">
                     <h2>Welcome !</h2>
-                    <h3>Please continue with: </h3>
+                    <h3 class="use-email">Please continue with your <span>Student email</span></h3>
+                    
                 </div>
+                
+                
                 <?php
 
 
@@ -35,7 +41,7 @@ require_once('./vendor/autoload.php');
                 //$clientSecret = getenv('GOOGLE_CLIENT_SECRET');
 
                 $client = new Google\Client();
-                $client->setAuthConfig('./pages/client_secrets.json');
+                $client->setAuthConfig('./pages/secrets/client_secrets.json');
                 //$client->setClientId($clientId);
                 //$client->setClientSecret($clientSecret);
                 $client->addScope('profile');
