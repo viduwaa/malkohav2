@@ -61,10 +61,10 @@ a:visited {
     width: 200px;
 }
 
-.use-email{
+.use-email {
     font-weight: 300;
 }
-.use-email span{
+.use-email span {
     font-weight: 700;
     color: #e64833;
 }
@@ -273,7 +273,7 @@ header a {
     color: white;
 }
 
-.sidebar ul li img{
+.sidebar ul li img {
     padding-left: 20%;
 }
 
@@ -516,8 +516,55 @@ input[type="checkbox"] {
     display: block;
 }
 
+.aboutpage {
+    font-size: 1.1em;
+}
+
 .aboutpage h2::after {
     content: "";
+}
+
+.aboutpage h3{
+    color: var(--primary);
+}
+
+
+.aboutpage p{
+    color: #fff;
+}
+
+.aboutpage ul {
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+.aboutpage ul li {
+    list-style-type: disc;
+    margin-left: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+    border-bottom:1px solid var(--fivetanary);
+}
+
+.aboutpage ul li a {
+    color: var(--primary);
+}
+.aboutpage ul li a:hover {
+    scale: 1.1;
+}
+
+.aboutpage ul li:last-child {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.github {
+    width: 80px;
+    padding-top: 0.5rem;
 }
 
 @media screen and (max-height: 640px) {
@@ -587,5 +634,17 @@ input[type="checkbox"] {
 
     .countdown-item {
         font-size: 0.8rem;
+    }
+
+    .aboutpage ul li {
+        font-size: 1em;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    .aboutpage ul li:last-child {
+        width: 90%;
+        margin-left: 1rem;
+        font-size: large;
     }
 }
