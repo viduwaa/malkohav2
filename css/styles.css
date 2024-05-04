@@ -9,6 +9,10 @@
     --font-black: #000;
 }
 
+.dark{
+    background: #1c1839 !important;
+}
+
 *,
 *::after,
 *::before {
@@ -30,6 +34,27 @@ a {
 
 a:visited {
     color: inherit;
+}
+
+
+.dark-mode{
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background: #1c1839;
+    padding: 0.3rem;
+}
+
+.dark-mode img {
+    width: 20px;
+}
+
+.welcome-textcolor{
+    color: #fff !important;
 }
 
 .home {
@@ -372,6 +397,9 @@ header a {
 }
 
 .logged-home h3 {
+    text-decoration: underline;
+    text-decoration-color: var(--fivetanary);
+    text-underline-offset: 0.3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -420,8 +448,10 @@ header a {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 0 0.5rem 0;
 }
+
+
 
 .card {
     display: flex;
@@ -460,10 +490,12 @@ header a {
 .sep-hover:hover {
     background: #e64833 !important;
     color: var(--primary) !important;
+    
 }
 
 .sep-hover:hover h3 {
     color: #fff;
+    text-decoration-color: #fff !important;
 }
 
 .semester {
@@ -644,7 +676,11 @@ input[type="checkbox"] {
 
     .aboutpage ul li:last-child {
         width: 90%;
-        margin-left: 1rem;
+        margin: 0;
         font-size: large;
+    }
+
+    .papers,.recordings,.quicklinks{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 }

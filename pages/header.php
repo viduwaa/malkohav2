@@ -18,6 +18,10 @@ include('check_login.php');
     <label for="checkbox" class="bars">
         <img id="burger-menu" src="../assets/icons/menu.svg" alt="menu">
     </label>
+
+    <button class="dark-mode" onclick="mode_switch()"><img id="dark-mode-icon" src="../assets/icons/dark_mode.svg" alt=""></button>
+
+
     <header>
         <nav>
             <ul>
@@ -75,7 +79,7 @@ include('check_login.php');
                 </div>
             </div>
         </div>
-        <script>
+        <script defer>
             const checkbox = document.getElementById('checkbox');
             const sidebar = document.getElementById('sidebar');
             const burgerMenu = document.getElementById('burger-menu');
@@ -84,6 +88,23 @@ include('check_login.php');
                 sidebar.classList.toggle('active');
                 burgerMenu.src = sidebar.classList.contains('active') ? '../assets/icons/close.svg' : '../assets/icons/menu.svg';
             });
+
+            let background = document.querySelector('.layout');
+            let dark_mode = document.querySelector('.dark-mode');
+            
+
+            function mode_switch() {
+                background.classList.toggle('dark');
+
+                
+
+                let dark_mode_icon = document.getElementById('dark-mode-icon');
+                if(dark_mode_icon.src.endsWith('dark_mode.svg')) {
+                    dark_mode_icon.src = '../assets/icons/light_mode.svg';
+                } else {
+                    dark_mode_icon.src = '../assets/icons/dark_mode.svg';
+                }
+            }
         </script>
         <div class="body">
             <div class="popup">

@@ -5,7 +5,7 @@ include('header.php');
 
 
 <div style="margin: 1rem;">
-    <h2 style="color: var(--font-black);">Welcome! <?php echo $name; ?></h2>
+    <h2 id="welcome-text" style="color: var(--font-black);">Welcome! <?php echo $name; ?></h2>
 </div>
 
 <div class="content" style="margin:1rem">
@@ -98,6 +98,12 @@ include('header.php');
 
             // Update the countdown timer every second
             setInterval(updateCountdown, 1000);
+            
+            let welcome_text = document.getElementById('welcome-text');
+            dark_mode.addEventListener('click', ()=>{
+                welcome_text.classList.toggle('welcome-textcolor');
+            });
+            
         </script>
     </div>
 </div>
