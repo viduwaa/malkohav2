@@ -9,7 +9,7 @@
     --font-black: #000;
 }
 
-.dark{
+.dark {
     background: #1c1839 !important;
 }
 
@@ -36,8 +36,7 @@ a:visited {
     color: inherit;
 }
 
-
-.dark-mode{
+.dark-mode {
     position: fixed;
     bottom: 15px;
     right: 40px;
@@ -53,7 +52,7 @@ a:visited {
     width: 20px;
 }
 
-.welcome-textcolor{
+.welcome-textcolor {
     color: #fff !important;
 }
 
@@ -404,6 +403,21 @@ header a {
     justify-content: space-between;
 }
 
+.timer{
+    justify-content: center !important;
+}
+
+.timer > div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer p{
+    font-size: 1.2rem;
+}
+
 .timer h3 {
     font-size: 1.5rem;
 }
@@ -451,8 +465,6 @@ header a {
     padding: 1rem 0 0.5rem 0;
 }
 
-
-
 .card {
     display: flex;
     flex-direction: column;
@@ -461,6 +473,26 @@ header a {
     padding: 1rem;
     background: var(--quaternary);
     border-radius: 0.3rem;
+}
+
+.assignments div:hover {
+    scale: 1;
+}
+
+.assignments h2::after,.next-exam h2::after{
+    content: '' !important;
+}
+.assignment-countdown,.timer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+.assignment-countdown > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .card:hover {
@@ -490,7 +522,6 @@ header a {
 .sep-hover:hover {
     background: #e64833 !important;
     color: var(--primary) !important;
-    
 }
 
 .sep-hover:hover h3 {
@@ -556,12 +587,11 @@ input[type="checkbox"] {
     content: "";
 }
 
-.aboutpage h3{
+.aboutpage h3 {
     color: var(--primary);
 }
 
-
-.aboutpage p{
+.aboutpage p {
     color: #fff;
 }
 
@@ -575,7 +605,7 @@ input[type="checkbox"] {
     margin-left: 2rem;
     padding: 1rem 0;
     color: #fff;
-    border-bottom:1px solid var(--fivetanary);
+    border-bottom: 1px solid var(--fivetanary);
 }
 
 .aboutpage ul li a {
@@ -664,6 +694,10 @@ input[type="checkbox"] {
         font-size: 1.5em;
     }
 
+    .timer p{
+        font-size: 1rem;
+    }
+
     .countdown-item {
         font-size: 0.8rem;
     }
@@ -680,7 +714,13 @@ input[type="checkbox"] {
         font-size: large;
     }
 
-    .papers,.recordings,.quicklinks{
+    .papers,
+    .recordings,
+    .quicklinks {
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .assignment-countdown,.timer {
+        gap: 1rem;
     }
 }

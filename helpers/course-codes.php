@@ -13,4 +13,5 @@
     $programming = '(ICT 1305)';
     $physics = '(ICT 1301)';
     $electronics = '(ENT 1202)';
+    $skillDevelopmentSemI = '(ICT 1108)'
 ?>

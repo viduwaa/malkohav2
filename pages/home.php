@@ -36,22 +36,23 @@ include('header.php');
             </div>
         </div>
     </div>
-
-
-
 </div>
 
+<?php include ('assignments.php'); ?>
 
-<div class="content" style="margin:1rem">
+
+<div class="content next-exam" style="margin:1rem">
+    <h2>Time Left for Next Sem Exam:</h2>
     <div class="card timer">
         <?php
         $exam_date_time = strtotime("2024-10-05 09:00:00");
         ?>
+        <div>
 
-
-        <div class="timer">
-            <h3>Time Left for Next Sem Exam:</h3>
             <p>Date assumed : 2024 - 10 - 05</p>
+            <p style="color: red;">Not official just a assumption</p>
+        </div>
+        <div>
             <div id="countdown" class="countdown">
                 <div class="countdown-item">
                     <span>Days</span>
@@ -98,12 +99,11 @@ include('header.php');
 
             // Update the countdown timer every second
             setInterval(updateCountdown, 1000);
-            
+
             let welcome_text = document.getElementById('welcome-text');
-            dark_mode.addEventListener('click', ()=>{
+            dark_mode.addEventListener('click', () => {
                 welcome_text.classList.toggle('welcome-textcolor');
             });
-            
         </script>
     </div>
 </div>
