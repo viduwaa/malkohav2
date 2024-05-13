@@ -10,7 +10,7 @@ $assignments = [
         'material_link' => 'https://drive.google.com/file/d/1POjLv1UG6_mUC1_RM3ucMDzq1UwfNe9o/view',
         'due_date' => '2024-05-13',
         'due_time' => '23:59',
-        'time_left'=> strtotime('2024-05-13 23:59:00')
+        'time_left'=> strtotime('2024-05-13 23:50:00')
     ],
     [
         'id' => '3',
