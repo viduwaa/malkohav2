@@ -20,7 +20,7 @@ function renderAssignment($assignments)
         <p>Due Date: <b>{$assignments['due_date']} - {$assignments['due_time']}</b></p>
         </div>
         <div>
-            <h3>Time Left : <span id="expired-{$assignments['id']}" style="color:red"></span></h3>
+            <h3>Time Left : <span id="expired-{$assignments['id']}" style="color:var(--fivetanary)"></span></h3>
             <div class="countdown">
                 <div class="countdown-item"><span>Days</span><span id="due-days-{$assignments['id']}">0</span></div>
                 <div class="countdown-item"><span>Hours</span><span id="due-hours-{$assignments['id']}">0</span></div>
@@ -29,15 +29,15 @@ function renderAssignment($assignments)
             </div>
             
                 <script>
-                function timeLeftCount() {
+                function timeLeftCount{$assignments['id']}() {
                 var now = new Date().getTime();
                 var dueDate = {$assignments['time_left']} * 1000;
                 var timeLeft = dueDate - now;
                 return timeLeft;
                 }
 
-                function updateDueCountdown() {
-                    var timeLeft = timeLeftCount();
+                function updateDueCountdown{$assignments['id']}() {
+                    var timeLeft = timeLeftCount{$assignments['id']}();
                     var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
                     var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                     var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
@@ -49,11 +49,11 @@ function renderAssignment($assignments)
                     document.getElementById("due-seconds-{$assignments['id']}").innerHTML = seconds;
                 }
 
-                var timeInterval = setInterval(function() {
-                    if (timeLeftCount() > 0) {
-                        updateDueCountdown();
+                var timeInterval{$assignments['id']} = setInterval(function() {
+                    if (timeLeftCount{$assignments['id']}() > 0) {
+                        updateDueCountdown{$assignments['id']}();
                     } else {
-                        clearInterval(timeInterval); 
+                        clearInterval(timeInterval{$assignments['id']}); 
                         document.getElementById("expired-{$assignments['id']}").innerHTML = "Expired";
                     }
                 }, 1000);
