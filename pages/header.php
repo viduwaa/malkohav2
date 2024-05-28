@@ -1,5 +1,21 @@
 <?php
 include('check_login.php');
+
+$sql = "SELECT 
+            SUM(CASE WHEN email LIKE '%ITT%' THEN 1 ELSE 0 END) AS itt_count,
+            SUM(CASE WHEN email LIKE '%ent%' THEN 1 ELSE 0 END) AS ent_count,
+            SUM(CASE WHEN email LIKE '%bst%' THEN 1 ELSE 0 END) AS bst_count
+        FROM accounts";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $itt_count = $row['itt_count'];
+    $ent_count = $row['ent_count'];
+    $bst_count = $row['bst_count'];
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -39,6 +55,10 @@ include('check_login.php');
         <div class="sidebar" id="sidebar">
             <div class="img-wrapper"><img class="logo" src="../assets/icons/logo.webp" alt=""></div>
             <nav>
+                <div class="usersInfo btn-hover color-6">
+                    <h2>Malkoha & Friends</h2>
+                    <p>ITT <?php echo$itt_count ?> | ENT <?php echo$ent_count ?> | BST <?php echo$bst_count ?></p>
+                </div>
                 <ul>
                     <a href="/malkohav2/pages/home.php">
                         <li>Home <img src="../assets/icons/home.svg" alt="home"></li>
@@ -91,15 +111,15 @@ include('check_login.php');
 
             let background = document.querySelector('.layout');
             let dark_mode = document.querySelector('.dark-mode');
-            
+
 
             function mode_switch() {
                 background.classList.toggle('dark');
 
-                
+
 
                 let dark_mode_icon = document.getElementById('dark-mode-icon');
-                if(dark_mode_icon.src.endsWith('dark_mode.svg')) {
+                if (dark_mode_icon.src.endsWith('dark_mode.svg')) {
                     dark_mode_icon.src = '../assets/icons/light_mode.svg';
                 } else {
                     dark_mode_icon.src = '../assets/icons/dark_mode.svg';
