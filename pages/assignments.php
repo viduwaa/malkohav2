@@ -64,7 +64,9 @@ function renderAssignment($assignments)
         $html .= "<p>Due Date: <b>{$assignments['due_date']}</b></p>";
     }
 
-    $html .= "</div></div>";
+    $html .= "</div>";
+    $assignments['extra'] ? $html .= "<div><h3 style=\"color:#ef476f ; font-weight:300\">{$assignments['extra']}</h3></div>" : '';
+    $html .= "</div>";
     return $html;
 }
 

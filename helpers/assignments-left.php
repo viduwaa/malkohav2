@@ -10,7 +10,8 @@ $assignments = [
         'material_link' => 'https://drive.google.com/file/d/1POjLv1UG6_mUC1_RM3ucMDzq1UwfNe9o/view',
         'due_date' => '2024-05-19',
         'due_time' => '23:59',
-        'time_left'=> strtotime('2024-05-19 23:50:00')
+        'time_left'=> strtotime('2024-05-19 23:50:00'),
+        'extra' =>'test'
     ],
     [
         'id' => '2',
@@ -20,7 +21,8 @@ $assignments = [
         'material_link' => 'https://drive.google.com/file/d/1POjLv1UG6_mUC1_RM3ucMDzq1UwfNe9o/view',
         'due_date' => '2024-05-19',
         'due_time' => '23:59',
-        'time_left'=> strtotime('2024-05-13 23:50:00')
+        'time_left'=> strtotime('2024-05-13 23:50:00'),
+        'extra' =>''
     ],
     [
         'id' => '3',
@@ -30,6 +32,7 @@ $assignments = [
         'material_link' => '',
         'due_date' => 'Before End of Semester I',
         'due_time' => '',
-        'time_left'=> ''
+        'time_left'=> '',
+        'extra' =>'TEST'
     ],
 ];
