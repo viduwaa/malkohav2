@@ -2,32 +2,32 @@
 require_once('course-codes.php');
 $papersSemI = [
     [
-        'name' => 'Mathematics for Technology I',
+        'name' => 'Fundamentals of Mathematics for Technology',
         'code' => $mathematicsSemI,
-        'link' =>  '#',
+        'link' =>  '',
         
     ],
     [
         'name' => 'Communication Skills I ',
         'code' => $english,
-        'link' =>'#',
+        'link' =>'',
         
     ],
     [
         'name' => 'Computer Programming for Technology',
         'code' => $programming,
-        'link' =>'#',
+        'link' =>'',
         
     ],
     [
         'name' => 'Electronics',
         'code' => $electronics,
-        'link' =>'#'
+        'link' =>''
     ],
     [
         'name' => 'Physics for Technology',
         'code' => $physics,
-        'link' =>'#'
+        'link' =>''
     ],
 
 ];
@@ -36,42 +36,42 @@ $papersSemII = [
     [
         'name' => 'Mathematics for Technology I',
         'code' => $mathematics,
-        'link' =>  '#',
+        'link' =>  '',
     ],
     [
         'name' => 'Communication Skills II',
         'code' => $english,
-        'link' =>'#',    
+        'link' =>'',    
     ],
     [
         'name' => 'Web Technologies',
         'code' => $webTechnologies,
-        'link' =>'#', 
+        'link' =>'', 
     ],
     [
         'name' => 'Human Computer Interaction',
         'code' => $humanComputer,
-        'link' =>'#'
+        'link' =>''
     ],
     [
         'name' => 'Principles of Management',
         'code' => $managementPrinciples,
-        'link' =>'#'
+        'link' =>''
     ],
     [
         'name' => 'Health and Wellbeing',
         'code' => $healthWelbeing,
-        'link' =>'#'
+        'link' =>''
     ],
     [
         'name' => 'Introduction to Multimedia',
         'code' => $multimedia,
-        'link' =>'#'
+        'link' =>''
     ],
     [
         'name' => 'Electricity and Magnetism',
         'code' => $electricityMagnetism,
-        'link' =>'#'
+        'link' =>''
     ],
 
 ];

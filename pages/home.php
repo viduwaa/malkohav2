@@ -13,7 +13,7 @@ include('header.php');
     <div class="quicklinks">
         <div class="logged-home">
             <div class="card sep-hover">
-                <a href="recordings.php">
+                <a href="https://docs.google.com/document/d/1twGBkzQGK_eKBOvHaR4EY4iy5KBhMXKPKgQupU5ULGk/" target="_blank">
                     <h3>Time Table</h3>
                     <p>Upto date with Zoom Links</p>
                 </a>
@@ -48,8 +48,8 @@ include('header.php');
         $exam_date_time = strtotime("2024-10-05 09:00:00");
         ?>
         <div>
-
-            <p>Date assumed : 2024 - 10 - 05</p>
+            
+            <p>Date assumed : <b> 2024 - 10 - 05 </b> </p>
             <p style="color: red;">Not official just a assumption</p>
         </div>
         <div>

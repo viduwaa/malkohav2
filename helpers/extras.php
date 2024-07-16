@@ -9,7 +9,7 @@ function renderSoftwares($sotfwaresLinks)
         echo '<img src="' . $software['img'] . '" alt="">';
         echo '<div>';
         echo '<h3>' . $software['name'] . '</h3>';
-        echo '<a href= "' . $software['link'] . '"  target="_blank"><span>Download<img style="height: 10px; width: 10px;" src="../assets/icons/open_inew.svg" alt=""></span> </a>';
+        echo '<a href="#" target="_blank"><span>Download</span></a>';
         echo '</div>';
         echo '</div>';
     }
@@ -25,20 +25,20 @@ function renderSoftwares($sotfwaresLinks)
             <img src="../assets/soft-icons/winrar.png" alt="">
             <div>
                 <h3>Winrar</h3>
-                <a href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701.exe">
-                    <span>
-                        Download
-                        <img style="height: 10px; width: 10px;" src="../assets/icons/open_inew.svg" alt="">
-                    </span>
-                </a>
+                <span><a href="https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701.exe">Download</a></span>
             </div>
+            
         </div>
+
+       
+        
     </div>
+
 </div>
 
 <div class="content" style="margin:1rem">
-    <h2>Softwares needed by Modules </h2>
-    <span style="font-weight: regular; font-size: 1rem;color: #fff;">*must need winrar to unzip. Password - <span style="color:yellow">malkoha</span></span>
+    <h2 >Softwares needed by Modules </h2>
+    <span style="font-weight: 100; font-size: 1rem;color: var(--fivetanary);">*must need winrar to unzip</span>
     <div class="quicklinks">
         <?php renderSoftwares($moduleSoftwares); ?>
     </div>

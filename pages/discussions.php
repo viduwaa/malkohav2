@@ -19,7 +19,7 @@ function renderSubject($discussions)
 ?>
 
 <div class="content" style="margin:1rem">
-    <label for="semI">
+    <label for="semII">
         <h2 style="padding-bottom: 1rem;">Tutorials/Assignments Discussions - Semester II</h2>
     </label>
     <input type="checkbox" name="checkbox" id="semII" class="semester" checked>

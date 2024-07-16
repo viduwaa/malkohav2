@@ -1,11 +1,11 @@
 <?php
 include('header.php');
-include('../helpers/paper-links.php');
+include('../helpers/slide-links.php');
 
-function renderPaper($papersSemI)
+function renderPaper($slideLinksSemII)
 {
     $html = "<div class=\"card sep-hover\">";
-    $html .= "<a href=\"{$papersSemI['link']}\" target=\"_blank\"><h3>{$papersSemI['name']}</h3> <p> {$papersSemI['code']} </p></a>";
+    $html .= "<a href=\"{$slideLinksSemII['link']}\" target=\"_blank\"><h3>{$slideLinksSemII['name']}</h3> <p> {$slideLinksSemII['code']} </p></a>";
     $html .= "</div>";
     return $html;
 }
@@ -14,13 +14,13 @@ function renderPaper($papersSemI)
 
 <div class="content" style="margin:1rem">
     <label for="semII">
-        <h2 style="padding-bottom: 1rem;">Slide Materials - Semester II</h2>
+        <h2 style="padding-bottom: 1rem;">Lecture Materials - Semester II</h2>
     </label>
     <input type="checkbox" name="checkbox" id="semII" class="semester" checked>
     <div class="papers semester">
         <?php
-        foreach ($papersSemII as $paper) {
-            echo renderPaper($paper);
+        foreach ($slideLinksSemII as $materials) {
+            echo renderPaper($materials);
         }
         ?>
     </div>

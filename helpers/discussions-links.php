@@ -6,14 +6,14 @@ $discussionsSemI = [
         'name' => 'Mathematics for Technology I',
         'topic' => 'Tutorials 1-5',
         'code' => $mathematicsSemI,
-        'link' =>  '#',
-        'materiallink'=>'#'
+        'link' =>  '',
+        'materiallink'=>''
     ],
     [
         'name' => 'Physics for Technology ',
         'topic' => 'Assignments',
         'code' => $physics,
-        'link' =>'#',
+        'link' =>'',
     ]
 
 ];
@@ -21,10 +21,10 @@ $discussionsSemI = [
 $discussionsSemII = [
     [
         'name' => 'Mathematics for Technology I',
-        'topic' => 'Tutorials 1',
+        'topic' => 'Tutorial 1',
         'code' => $mathematics,
-        'link' =>  '#',
-        'materiallink'=>'#'
+        'link' =>  '',
+        'materiallink'=>''
     ],
 
 ];

@@ -29,12 +29,12 @@ include('header.php');
         </li>
 
         <li>
-            
-                <a href="https://github.com/viduwaa/malkohav2/tree/main" target="_blank"><img src="../assets/icons/GitHub_Logo_White.png" alt="github" class="github"></a>
-                <a href="https://www.youtube.com/@MalKohaFriendsPVTLTD"><img src="../assets/icons/youtube.png" alt="youtube"></a>
-                <a href="#"><img src="../assets/icons/facebook.png" alt="youtube"></a>
-                <a href="mailto:rajaratamalkoha@gmail.com">rajaratamalkoha@gmail.com</a>
-            
+
+            <a href="https://github.com/viduwaa/malkohav2/tree/main" target="_blank"><img src="../assets/icons/GitHub-Logo.png" alt="github" class="github"></a>
+            <a href="https://www.youtube.com/@MalKohaFriendsPVTLTD"><img src="../assets/icons/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="../assets/icons/facebook.png" alt="facebook"></a>
+            <a href="mailto:admin@malkoha.site">admin@malkoha.site</a>
+
         </li>
     </ul>
 

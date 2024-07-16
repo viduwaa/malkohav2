@@ -24,8 +24,21 @@ if ($result->num_rows > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css?v=1.20" type="text/css">
     <link rel="icon" type="image/webp" href="/assets/icons/logo.webp">
+    <link rel="preload" as="font" href="/assets/fonts/Extatica-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/assets/fonts/Extatica-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <meta name="description" content="Malkoha & Friends - All Your Study Materials In One Place">
+    <meta name="author" content="Malkoha & Friends Team">
+
+    <meta property="og:title" content="Malkoha & Friends">
+    <meta property="og:description" content="All Your Study Materials In One Place">
+    <meta property="og:author" content="Malkoha & Friends Team">
+    <meta property="og:image" content="/assets/icons/logo.webp">
+    <meta property="og:url" content="https://malkoha.site">
+    <meta property="og:type" content="website">
+
+
     <title>Malkoha & Friends</title>
 </head>
 
@@ -36,7 +49,6 @@ if ($result->num_rows > 0) {
     </label>
 
     <button class="dark-mode" onclick="mode_switch()"><img id="dark-mode-icon" src="../assets/icons/dark_mode.svg" alt=""></button>
-
 
     <header>
         <nav>
@@ -57,7 +69,7 @@ if ($result->num_rows > 0) {
             <nav>
                 <div class="usersInfo btn-hover color-6">
                     <h2>Malkoha & Friends</h2>
-                    <p>ITT <?php echo$itt_count ?> | ENT <?php echo$ent_count ?> | BST <?php echo$bst_count ?></p>
+                    <p>ITT <?php echo $itt_count ?> | ENT <?php echo $ent_count ?> | BST <?php echo $bst_count ?></p>
                 </div>
                 <ul>
                     <a href="/malkohav2/pages/home.php">
@@ -70,7 +82,7 @@ if ($result->num_rows > 0) {
                         <li>Past Papers<img src="../assets/icons/papers.svg" alt="papers"></li>
                     </a>
                     <a href="/malkohav2/pages/slide-materials.php">
-                        <li>Slide Materials<img src="../assets/icons/slides.svg" alt="discussions"></li>
+                        <li>Lecture Materials<img src="../assets/icons/slides.svg" alt="discussions"></li>
                     </a>
                     <a href="/malkohav2/pages/discussions.php">
                         <li>Discussions<img src="../assets/icons/discuss.svg" alt="discussions"></li>
@@ -79,15 +91,19 @@ if ($result->num_rows > 0) {
             </nav>
             <div class="aboutus">
                 <ul>
+                    <a href="/malkohav2/pages/extras.php">
+                        <li>Softwares and Extras</li>
+                    </a>
                     <a href="/malkohav2/pages/kuppi-videos.php">
                         <li>Kuppi Videos</li>
-                    </a>
-                    <a href="/malkohav2/pages/extras.php">
-                        <li>Extras</li>
                     </a>
                     <a href="/malkohav2/pages/aboutus.php">
                         <li>About Us</li>
                     </a>
+                    <a href="https://games.malkoha.site">
+                        <li>Games ?</li>
+                    </a>
+
                 </ul>
                 <div class="socials">
                     <h3>Follow Us On</h3>

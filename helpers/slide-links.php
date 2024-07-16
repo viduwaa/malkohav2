@@ -1,78 +1,78 @@
 <?php
 
 require_once('course-codes.php');
-$papersSemI = [
+$slideLinksSemI = [
     [
         'name' => 'Mathematics for Technology I',
         'code' => $mathematicsSemI,
-        'link' =>  'https://drive.google.com/drive/folders/1-vdEvZvRyFW-HD8_fwx8UrFkvBLLiFt0',
+        'link' =>  '',
         
     ],
     [
         'name' => 'Communication Skills I ',
         'code' => $english,
-        'link' =>'https://drive.google.com/drive/folders/1-r8AeRAY2G9aLLnEtCqkPz0PyDOwTO8w',
+        'link' =>'',
         
     ],
     [
         'name' => 'Computer Programming for Technology',
         'code' => $programming,
-        'link' =>'https://drive.google.com/drive/folders/10CaggrYDNMz1ccUMkec4aM-cFsJ0s8e4',
+        'link' =>'',
         
     ],
     [
         'name' => 'Electronics',
         'code' => $electronics,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
     [
         'name' => 'Physics for Technology',
         'code' => $physics,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
 
 ];
 
-$papersSemII = [
+$slideLinksSemII = [
     [
         'name' => 'Mathematics for Technology I',
         'code' => $mathematics,
-        'link' =>  'https://drive.google.com/drive/folders/1-vdEvZvRyFW-HD8_fwx8UrFkvBLLiFt0',
+        'link' =>  '',
     ],
     [
         'name' => 'Communication Skills II',
         'code' => $english,
-        'link' =>'https://drive.google.com/drive/folders/1-r8AeRAY2G9aLLnEtCqkPz0PyDOwTO8w',    
+        'link' =>'',    
     ],
     [
         'name' => 'Web Technologies',
         'code' => $webTechnologies,
-        'link' =>'https://drive.google.com/drive/folders/10CaggrYDNMz1ccUMkec4aM-cFsJ0s8e4', 
+        'link' =>'', 
     ],
     [
         'name' => 'Human Computer Interaction',
         'code' => $humanComputer,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
     [
         'name' => 'Principles of Management',
         'code' => $managementPrinciples,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
     [
         'name' => 'Health and Wellbeing',
         'code' => $healthWelbeing,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
     [
         'name' => 'Introduction to Multimedia',
         'code' => $multimedia,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
     [
         'name' => 'Electricity and Magnetism',
         'code' => $electricityMagnetism,
-        'link' =>'https://drive.google.com/drive/folders/1-rxkQMJnUoypuf-fGW4xRi9TxaF2hAVh'
+        'link' =>''
     ],
 
 ];

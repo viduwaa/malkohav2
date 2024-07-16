@@ -8,7 +8,7 @@
     $electricityMagnetism = '(ENT 1302)';
     $managementPrinciples = '(CML 1203)';
     $healthWelbeing = '(CML 1204)';
-    $multimedia = '(ICT 1110)';
+    $multimedia = '(ICT 1210)';
     $productivity = '(ICT 1111)';
     $programming = '(ICT 1305)';
     $physics = '(ICT 1301)';
