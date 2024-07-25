@@ -1,22 +1,3 @@
-<?php
-
-$stmt = $conn->prepare("SELECT * FROM accounts WHERE id = ?");
-$stmt->bind_param("s", $_SESSION['google_id']);
-$stmt->execute();
-
-$result = $stmt->get_result();
-$account = $result->fetch_assoc();
-
-$name = $account['name'];
-$email = $account['email'];
-$picture = $account['picture'];
-$registered = $account['registered'];
-
-$stmt->close();
-$conn->close();
-
-?>
-
 <div class="popup-content">
     <div>
         <img id="popup-close" src="../assets/icons/close.svg" alt="close">

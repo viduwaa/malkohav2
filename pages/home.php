@@ -38,7 +38,7 @@ include('header.php');
     </div>
 </div>
 
-<?php include ('assignments.php'); ?>
+<?php include('assignments.php'); ?>
 
 
 <div class="content next-exam" style="margin:1rem">
@@ -48,7 +48,7 @@ include('header.php');
         $exam_date_time = strtotime("2024-10-05 09:00:00");
         ?>
         <div>
-            
+
             <p>Date assumed : <b> 2024 - 10 - 05 </b> </p>
             <p style="color: red;">Not official just a assumption</p>
         </div>
@@ -107,3 +107,6 @@ include('header.php');
         </script>
     </div>
 </div>
+
+<!-- Feed back form -->
+

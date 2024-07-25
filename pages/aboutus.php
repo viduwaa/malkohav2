@@ -39,3 +39,10 @@ include('header.php');
     </ul>
 
 </div>
+
+<div class="content feedback" style="margin:1rem" id="feedback">
+    <div class="card">
+        <h3>Any Feedbacks / Requests for Us ?</h3>
+        <?php include 'feedbacks.php'; ?>
+    </div>
+</div>
