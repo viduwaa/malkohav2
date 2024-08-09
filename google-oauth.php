@@ -14,7 +14,7 @@ $client->setAuthConfig('./pages/secured/client_secrets.json');
 $client->addScope('profile');
 $client->addScope('email');
 
-//$client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohaold/login-old.php');
+$client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/malkohav2/google-oauth.php');
 try {
     //code...
 } catch (\Throwable $th) {
@@ -57,7 +57,7 @@ if (!isset($_GET['code'])) {
     session_regenerate_id();
     $_SESSION['google_id'] = $id;
     $_SESSION['google_loggedin'] = TRUE;
-    header("Location: http://" . $_SERVER['HTTP_HOST'] . "/pages/home.php");
+    header("Location: http://" . $_SERVER['HTTP_HOST'] . "/malkohav2/pages/home.php");
 
     $stmt->close();
     $conn->close();
