@@ -3,7 +3,7 @@ date_default_timezone_set('Asia/Colombo');
 
 $server = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $dbname = "malkohav2";
 
 $conn = mysqli_connect($server, $username, $password, $dbname);
