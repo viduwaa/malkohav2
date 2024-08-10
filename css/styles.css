@@ -3,14 +3,14 @@
 :root {
     --primary: #fbe9d0;
     --secondary: #874f41;
-    --tertiary: #0f11af;
+    --tertiary: #7b7cc0;
     --quaternary: #90aead;
     --fivetanary: #e64833;
     --font-black: #000;
 }
 
 .dark {
-    background: #c01919 !important;
+    background: #444040 !important;
 }
 
 *,
